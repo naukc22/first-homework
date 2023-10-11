@@ -1,6 +1,5 @@
-package ru.ylab;
+package ru.ylab.in;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
