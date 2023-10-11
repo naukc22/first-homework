@@ -1,4 +1,4 @@
-package ru.ylab;
+package ru.ylab.in;
 
 import java.util.UUID;
 
