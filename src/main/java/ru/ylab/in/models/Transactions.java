@@ -1,19 +1,20 @@
-package ru.ylab.in;
+package ru.ylab.in.models;
 
 import java.util.UUID;
 
 // Транзакция
-public class Transaction {
+public class Transactions {
+    UUID ID;
+    Integer personID;
     String operationName;
     double amount;
-    UUID ID;
 
-    public Transaction(String operationName, double amount, UUID ID) {
+    public Transactions(UUID ID, Integer personID, String operationName, double amount) {
+        this.ID = ID;
+        this.personID = personID;
         this.operationName = operationName;
         this.amount = amount;
-        this.ID = ID;
     }
-
 
     // Getters and Setters
     public String getOperationName() {
@@ -42,7 +43,11 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "{" + operationName + ". Cумма = " + amount +
+        return "Transaction{" +
+                "ID=" + ID +
+                ", personID=" + personID +
+                ", operationName='" + operationName + '\'' +
+                ", amount=" + amount +
                 '}';
     }
 }
