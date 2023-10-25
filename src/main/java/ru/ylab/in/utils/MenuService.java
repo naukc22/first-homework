@@ -1,14 +1,14 @@
-package ru.ylab.in;
+package ru.ylab.in.utils;
 
 public class MenuService {
 
-    public void showNotAuthMenu() {
+    public static void showNotAuthMenu() {
         System.out.println("Выберите :");
         System.out.println("1 - Зарегистрироваться");
         System.out.println("2 - Войти");
         System.out.println("3 - Закрыть");
     }
-    public void showAuthMenu() {
+    public static void showAuthMenu() {
         System.out.println("Выберите :");
         System.out.println("1 - Снять");
         System.out.println("2 - Пополнить");
